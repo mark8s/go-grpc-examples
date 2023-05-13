@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package client_side.proto;
+
+option go_package = "github.com/mark8s/go-grpc-examples/client-side/proto";
+
+message StreamRequest{
+    string stream_data = 1;
+}
+
+message SimpleResponse {
+    int32 code = 1;
+    string value = 2;
+}
+
+service StreamClient {
+    rpc RouteList(stream StreamRequest)returns(SimpleResponse){};
+}
+
+
