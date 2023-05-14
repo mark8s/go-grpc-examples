@@ -1,0 +1,21 @@
+syntax = "proto3";//
+
+package validator.proto;
+
+option go_package = "github.com/mark8s/go-grpc-examples/validator/proto";
+
+import "validate.proto";
+
+// 定义发送请求信息
+message InnerMessage {
+   int32 some_integer = 1 [()];
+}
+
+// 定义响应信息
+message SimpleResponse{
+    // 定义接收的参数
+    // 参数类型 参数名 标识号(不可重复)
+    int32 code = 1;
+    string value = 2;
+}
+

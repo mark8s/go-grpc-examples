@@ -57,3 +57,6 @@ option go_package用于生成的.pb.go文件,在引用时和生成go包名时起
 
 [Bingjian-Zhu / go-grpc-example](https://github.com/Bingjian-Zhu/go-grpc-example)
 
+[grpc tutorial](https://grpc.io/docs/languages/go/basics/)
+
+[指月小筑 grpc](https://www.lixueduan.com/categories/grpc/)
